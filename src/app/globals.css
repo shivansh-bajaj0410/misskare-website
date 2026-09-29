@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+}
+
+::selection {
+  background: #C9A15D;
+  color: #1B1512;
+}
+
+/* Custom scrollbar - subtle, boutique feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #B98A5E;
+  border-radius: 10px;
+}
+
+.container-boutique {
+  @apply mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12;
+}
+
+.heading-serif {
+  @apply font-serif tracking-tight;
+}
+
+.eyebrow {
+  @apply text-xs sm:text-sm uppercase tracking-widest2 text-camel2 font-medium;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 bg-ink text-cream px-8 py-3.5 rounded-full
+    text-sm uppercase tracking-widest2 font-medium transition-all duration-300
+    hover:bg-gold hover:text-ink active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 border border-ink/70 text-ink px-8 py-3.5 rounded-full
+    text-sm uppercase tracking-widest2 font-medium transition-all duration-300
+    hover:bg-ink hover:text-cream active:scale-[0.98];
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center gap-2 bg-gold text-ink px-8 py-3.5 rounded-full
+    text-sm uppercase tracking-widest2 font-medium transition-all duration-300
+    hover:bg-goldlight active:scale-[0.98];
+}
+
+.card-boutique {
+  @apply bg-white/60 backdrop-blur-sm border border-black/5 rounded-2xl shadow-boutique;
+}
+
+.input-boutique {
+  @apply w-full rounded-lg border border-black/15 bg-white/70 px-4 py-3 text-sm
+    placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition;
+}
+
+.label-boutique {
+  @apply text-xs uppercase tracking-widest2 text-ink/60 font-medium mb-1.5 block;
+}

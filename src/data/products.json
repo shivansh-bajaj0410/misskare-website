@@ -1,0 +1,254 @@
+[
+  {
+    "id": "polka-balconette-set",
+    "slug": "polka-dot-balconette-set",
+    "name": "Polka Dot Balconette Set",
+    "category": "sets",
+    "price": 2400,
+    "compareAt": null,
+    "sku": "MK-213",
+    "rating": 4.8,
+    "reviewCount": 214,
+    "badge": "Bestseller",
+    "description": "A wireline balconette bra and matching brief in satin polka-dot, finished with scalloped lace trim along the neckline. Adjustable straps and a hook-and-eye back closure for a tailored fit.",
+    "colors": [
+      { "name": "Noir", "hex": "#151515" },
+      { "name": "Ivory", "hex": "#F5F0EA" }
+    ],
+    "sizes": ["32B", "32C", "34B", "34C", "34D", "36B", "36C", "36D"],
+    "images": [
+      "/images/products/polka-single.jpg",
+      "/images/products/polka-collage.jpg"
+    ]
+  },
+  {
+    "id": "sage-comfort-bra",
+    "slug": "sage-wireless-comfort-bra",
+    "name": "Sage Wireless Comfort Bra",
+    "category": "bras",
+    "price": 1900,
+    "compareAt": 2200,
+    "sku": "MK-2288",
+    "rating": 4.9,
+    "reviewCount": 176,
+    "badge": "New",
+    "description": "Seamless wireless coverage with structured cups that hold shape without underwire. Full adjustable straps and a second-skin satin finish that disappears under clothing.",
+    "colors": [
+      { "name": "Sage", "hex": "#B9C6A8" },
+      { "name": "Burgundy", "hex": "#6B2737" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "/images/products/sage-close.jpg",
+      "/images/products/sage-collage-a.jpg"
+    ]
+  },
+  {
+    "id": "sage-highwaist-brief",
+    "slug": "sage-high-waist-brief",
+    "name": "Sage High-Waist Brief",
+    "category": "bras",
+    "price": 1200,
+    "compareAt": null,
+    "sku": "MK-2296",
+    "rating": 4.7,
+    "reviewCount": 132,
+    "badge": null,
+    "description": "High-waist coverage cut from the same satin as the Comfort Bra, for a matched set that smooths without digging in.",
+    "colors": [{ "name": "Sage", "hex": "#B9C6A8" }],
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "/images/products/sage-collage-b.jpg",
+      "/images/products/sage-collage-a.jpg"
+    ]
+  },
+  {
+    "id": "burgundy-lace-bra",
+    "slug": "burgundy-lace-trim-wireless-bra",
+    "name": "Burgundy Lace-Trim Wireless Bra",
+    "category": "bras",
+    "price": 2100,
+    "compareAt": null,
+    "sku": "MK-341",
+    "rating": 4.8,
+    "reviewCount": 98,
+    "badge": "Bestseller",
+    "description": "A V-neckline wireless bra in deep aubergine satin, edged in soft scalloped lace. Full-coverage cups with racerback support.",
+    "colors": [{ "name": "Burgundy", "hex": "#5A2130" }],
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "/images/products/burgundy-collage.jpg",
+      "/images/products/burgundy-collage.jpg"
+    ]
+  },
+  {
+    "id": "midnight-silk-chemise",
+    "slug": "midnight-silk-chemise",
+    "name": "Midnight Silk Chemise",
+    "category": "sleepwear",
+    "price": 4200,
+    "compareAt": null,
+    "sku": "MK-410",
+    "rating": 4.9,
+    "reviewCount": 132,
+    "badge": "New",
+    "description": "A bias-cut chemise in mulberry silk, finished with adjustable straps and a French-seam hem. Cool against the skin, cut to skim rather than cling.",
+    "colors": [
+      { "name": "Midnight", "hex": "#221815" },
+      { "name": "Camel", "hex": "#C79A6B" }
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "images": [
+      "/images/products/polka-single.jpg",
+      "/images/products/polka-collage.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "amber-satin-robe",
+    "slug": "amber-satin-robe",
+    "name": "Amber Satin Robe",
+    "category": "sleepwear",
+    "price": 5200,
+    "compareAt": 6000,
+    "sku": "MK-411",
+    "rating": 4.7,
+    "reviewCount": 64,
+    "badge": null,
+    "description": "A knee-length robe in liquid satin with a self-tie belt and kimono sleeve. Weighted hem so it falls rather than floats.",
+    "colors": [{ "name": "Amber", "hex": "#B8895E" }],
+    "sizes": ["S/M", "L/XL"],
+    "images": [
+      "/images/products/burgundy-collage.jpg",
+      "/images/products/burgundy-collage.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "camisole-slip-set",
+    "slug": "camel-camisole-slip-set",
+    "name": "Camel Camisole Slip Set",
+    "category": "sleepwear",
+    "price": 3600,
+    "compareAt": null,
+    "sku": "MK-412",
+    "rating": 4.6,
+    "reviewCount": 51,
+    "badge": null,
+    "description": "A camisole and matching slip in warm camel satin, cut on the bias for a fluid drape. Lace-trimmed neckline.",
+    "colors": [{ "name": "Camel", "hex": "#C79A6B" }],
+    "sizes": ["XS", "S", "M", "L"],
+    "images": [
+      "/images/products/sage-collage-a.jpg",
+      "/images/products/sage-collage-b.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "sculpt-waist-slip",
+    "slug": "sculpt-waist-slip",
+    "name": "Sculpt Waist Slip",
+    "category": "shapewear",
+    "price": 3100,
+    "compareAt": null,
+    "sku": "MK-520",
+    "rating": 4.5,
+    "reviewCount": 98,
+    "badge": null,
+    "description": "A firm-hold slip that smooths the midsection without restricting movement, in a breathable four-way stretch knit.",
+    "colors": [
+      { "name": "Ink", "hex": "#221118" },
+      { "name": "Ivory", "hex": "#F5F0EA" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/sage-close.jpg",
+      "/images/products/sage-collage-a.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "smoothing-brief-shapewear",
+    "slug": "smoothing-high-waist-brief",
+    "name": "Smoothing High-Waist Brief",
+    "category": "shapewear",
+    "price": 1800,
+    "compareAt": null,
+    "sku": "MK-521",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "badge": null,
+    "description": "Medium-hold shaping brief with a seamless waistband that won't roll or dig in, worn under fitted silhouettes.",
+    "colors": [{ "name": "Ink", "hex": "#221118" }],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/sage-collage-b.jpg",
+      "/images/products/sage-collage-a.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "contour-bodysuit",
+    "slug": "contour-shaping-bodysuit",
+    "name": "Contour Shaping Bodysuit",
+    "category": "shapewear",
+    "price": 3800,
+    "compareAt": 4400,
+    "sku": "MK-522",
+    "rating": 4.8,
+    "reviewCount": 112,
+    "badge": "Bestseller",
+    "description": "A full-coverage bodysuit with light shaping through the torso and a soft-cup bra built in. Snap closure gusset.",
+    "colors": [{ "name": "Camel", "hex": "#C79A6B" }],
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "/images/products/burgundy-collage.jpg",
+      "/images/products/burgundy-collage.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "everyday-tshirt-bra",
+    "slug": "everyday-tshirt-bra",
+    "name": "Everyday T-Shirt Bra",
+    "category": "bras",
+    "price": 1600,
+    "compareAt": null,
+    "sku": "MK-118",
+    "rating": 4.7,
+    "reviewCount": 402,
+    "badge": null,
+    "description": "A smooth, seamless T-shirt bra with light padding for everyday coverage under any fabric. Breathable microfiber.",
+    "colors": [
+      { "name": "Ivory", "hex": "#F5F0EA" },
+      { "name": "Ink", "hex": "#221118" },
+      { "name": "Blush", "hex": "#D9AFA5" }
+    ],
+    "sizes": ["32B", "32C", "34B", "34C", "34D", "36B", "36C"],
+    "images": [
+      "/images/products/polka-single.jpg",
+      "/images/products/polka-collage.jpg"
+    ],
+    "placeholder": true
+  },
+  {
+    "id": "blush-lace-brief",
+    "slug": "blush-lace-trim-brief",
+    "name": "Blush Lace-Trim Brief",
+    "category": "sets",
+    "price": 1100,
+    "compareAt": null,
+    "sku": "MK-119",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "badge": null,
+    "description": "A mid-rise brief in soft blush satin with a scalloped lace waistband, sold to pair with the Everyday T-Shirt Bra.",
+    "colors": [{ "name": "Blush", "hex": "#D9AFA5" }],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "images": [
+      "/images/products/sage-collage-a.jpg",
+      "/images/products/sage-collage-b.jpg"
+    ],
+    "placeholder": true
+  }
+]

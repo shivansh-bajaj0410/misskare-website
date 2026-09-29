@@ -1,0 +1,132 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // Local dev uses SQLite for zero-config setup.
+  // For production, change to: provider = "postgresql"
+  // and set DATABASE_URL to your managed Postgres connection string.
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+
+  addresses Address[]
+  orders    Order[]
+  wishlist  WishlistItem[]
+}
+
+model Address {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName  String
+  line1     String
+  line2     String?
+  city      String
+  state     String
+  postal    String
+  country   String
+  phone     String?
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String
+  description String?
+  heroImage   String?
+  products    Product[]
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String
+  price       Int      // in cents/paise
+  compareAt   Int?     // original price if discounted
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  colors      String   // JSON string array e.g. ["Camel","Black","Blush"]
+  sizes       String   // JSON string array e.g. ["XS","S","M","L","XL"]
+  images      String   // JSON string array of image URLs
+  material    String?
+  featured    Boolean  @default(false)
+  isNew       Boolean  @default(false)
+  rating      Float    @default(4.8)
+  reviewCount Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  wishlistedBy WishlistItem[]
+  orderItems   OrderItem[]
+}
+
+model WishlistItem {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId])
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  userId          String?
+  user            User?       @relation(fields: [userId], references: [id])
+  email           String
+  status          String      @default("paid") // paid, processing, shipped, delivered
+  subtotal        Int
+  discount        Int         @default(0)
+  shippingCost    Int         @default(0)
+  total           Int
+  promoCode       String?
+  shippingName    String
+  shippingLine1   String
+  shippingLine2   String?
+  shippingCity    String
+  shippingState   String
+  shippingPostal  String
+  shippingCountry String
+  stripeSessionId String?     @unique
+  createdAt       DateTime    @default(now())
+
+  items OrderItem[]
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  name      String
+  color     String
+  size      String
+  price     Int
+  quantity  Int
+}
+
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model PromoCode {
+  id         String @id @default(cuid())
+  code       String @unique
+  percentOff Int
+  active     Boolean @default(true)
+}
